@@ -9,5 +9,6 @@ public class GCD {
         }
         System.out.println("The greatest common divisor (GCD) -> " + a);
         System.out.println("Test");
+        System.out.println("Test1");
     }
 }
