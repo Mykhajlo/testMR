@@ -11,5 +11,6 @@ public class GCD {
         System.out.println("Test");
         System.out.println("Test1");
         System.out.println("Test2");
+        System.out.println("Test44");
     }
 }
