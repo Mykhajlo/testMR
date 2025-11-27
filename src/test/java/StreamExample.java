@@ -24,18 +24,22 @@ public class StreamExample {
         System.out.println(upper);
 
         List<Integer> unique = nums.stream()
-                .distinct()
+                .distinct() // show only unique elements
                 .collect(Collectors.toList());
         System.out.println(unique);
 
        // nums.forEach(System.out::println);
-        Optional<Integer> first = nums.stream().findFirst(); // 1
+        Optional<Integer> first = Optional.ofNullable(nums.stream()
+                .findFirst() // 1
+                .orElseThrow(() -> new AssertionError("Empty list")));
         System.out.println(first);
 
-        Optional<Integer> any = nums.stream().findAny(); // 1
+        Optional<Integer> any = nums.stream()
+                .findAny(); // 1
         System.out.println(any);
 
-        int sum = nums.stream().reduce(0, Integer::sum);
+        int sum = nums.stream()
+                .reduce(0, Integer::sum);
         System.out.println(sum);
 
         List<String> result = Arrays.asList("apple", "banana", "pear", "apple")
