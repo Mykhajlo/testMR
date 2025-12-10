@@ -29,7 +29,7 @@ public class ReverseNumber {
         System.out.println("Reversed via recursion Number is: " + rev);
 
         whileT(num);
-        System.out.println("Reversed Number is: " + reversed);
+        System.out.println("Reversed Number WHILE is: " + reversed);
 
        // stringBufferS(num);
         System.out.println("Reversed via StringBuilder Number is: " + stringBufferS(num));

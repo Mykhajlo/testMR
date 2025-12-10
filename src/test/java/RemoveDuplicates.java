@@ -10,7 +10,7 @@ public class RemoveDuplicates {
         for (int num : arr) {
             set.add(num);
         }
-        System.out.println(set);
+        System.out.println("Via set in circle : " + set);
 
         Set<Integer> set1 = Arrays.stream(arr)  // create IntStream from array
                 .boxed()                       // convert int -> Integer (boxed stream)
